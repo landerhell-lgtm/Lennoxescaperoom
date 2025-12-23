@@ -1,121 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html lang="sv">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>God Jul Lennox!</title>
+  <meta name="description" content="En julklapp som blir ett äventyr – escape room tillsammans." />
+  <style>
+    :root { --bg:#0b0f14; --text:#e8edf6; --muted:#b7c0d6; --accent:#ffd36a; }
+    * { box-sizing: border-box; }
+    body{
+      margin:0; min-height:100vh; display:grid; place-items:center;
+      background: radial-gradient(1200px 700px at 20% 10%, #1b2440 0%, transparent 55%),
+                  radial-gradient(900px 600px at 80% 90%, #2a1a2f 0%, transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      padding: 28px;
+    }
+    .card{
+      width:min(820px, 100%);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 22px;
+      padding: clamp(20px, 4vw, 44px);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      position: relative;
+      overflow: hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(600px 300px at 30% 20%, rgba(255,211,106,0.20), transparent 60%),
+                  radial-gradient(500px 260px at 80% 70%, rgba(141,114,255,0.18), transparent 60%);
+      pointer-events:none;
+    }
+    .inner{ position:relative; }
+    .tag{
+      display:inline-block;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      padding: 8px 12px;
+      margin-bottom: 18px;
+      background: rgba(0,0,0,0.18);
+    }
+    h1{
+      margin:0 0 14px;
+      font-size: clamp(30px, 4.6vw, 52px);
+      letter-spacing: 0.3px;
+    }
+    .poem{
+      margin: 18px 0 0;
+      font-size: clamp(18px, 2.2vw, 24px);
+      line-height: 1.55;
+      white-space: pre-line;
+    }
+    .footer{
+      margin-top: 22px;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--muted);
+      font-size: 14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .dot{ width:6px; height:6px; border-radius:99px; background: var(--accent); display:inline-block; }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;html lang="sv"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;God Jul Lennox!&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="En julklapp som blir ett äventyr – escape room tillsammans." /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root { --bg:#0b0f14; --card:#121824; --text:#e8edf6; --muted:#b7c0d6; --accent:#ffd36a; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0; min-height:100vh; display:grid; place-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(1200px 700px at 20% 10%, #1b2440 0%, transparent 55%),</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>radial-gradient(900px 600px at 80% 90%, #2a1a2f 0%, transparent 50%),</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: ui-serif, Georgia, "Times New Roman", Times, serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:min(820px, 100%);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.10);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: clamp(20px, 4vw, 44px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 18px 50px rgba(0,0,0,0.45);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card:before{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>content:"";</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position:absolute; inset:-2px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(600px 300px at 30% 20%, rgba(255,211,106,0.20), transparent 60%),</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>radial-gradient(500px 260px at 80% 70%, rgba(141,114,255,0.18), transparent 60%);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>pointer-events:none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.inner{ position:relative; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0 0 14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(30px, 4.6vw, 52px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.3px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tag{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: .12em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.12);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0,0,0,0.18);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.poem{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 18px 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(18px, 2.2vw, 24px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.55;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>white-space: pre-line;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.footer{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.dot{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:6px; height:6px; border-radius:99px; background: var(--accent); display:inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media print{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>body{ background:white; color:black; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.card{ box-shadow:none; border: 1px solid #ddd; background: white; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.tag, .footer{ color:#333; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="card" role="main" aria-label="Julklapp till Lennox"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tag"&gt;Julklapp • Escape Room&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;God Jul Lennox!&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="poem"&gt;</p>
-<p class="p1">Bakom lås och gåtor, ledtrådar små,</p>
-<p class="p1">väntar ett äventyr där hjärnan får gå.</p>
-<p class="p1">Tiden den tickar, spänningen stiger,</p>
-<p class="p1">kan ni lösa allt innan sekunderna flyger?</p>
-<p class="p1">I julklapp får du inget man ser eller tar,</p>
-<p class="p1">utan ett escape room-äventyr – tillsammans, så klart!</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Vi gör det här tillsammans – redo när du är!&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <main class="card" role="main" aria-label="Julklapp till Lennox">
+    <div class="inner">
+      <div class="tag">Julklapp • Escape Room</div>
+      <h1>God Jul Lennox!</h1>
+
+      <div class="poem">
+Bakom lås och gåtor, ledtrådar små,
+väntar ett äventyr där hjärnan får gå.
+Tiden den tickar, spänningen stiger,
+kan ni lösa allt innan sekunderna flyger?
+I julklapp får du inget man ser eller tar,
+utan ett escape room-äventyr – tillsammans, så klart!
+      </div>
+
+      <div class="footer">
+        <span class="dot"></span>
+        <span>Skanna QR-koden och lås upp ditt uppdrag.</span>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
