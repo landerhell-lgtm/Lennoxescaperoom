@@ -134,14 +134,21 @@ utan ett escape room-äventyr – tillsammans, så klart!
       </div>
     </div>
   </main>
-<audio autoplay loop muted id="bg-audio">
-  <source src="mystery.mp3" type="audio/mpeg">
+<audio id="bg-audio" loop>
+  <source src="TAL.mp3" type="audio/mpeg">
 </audio>
+
+<button id="sound-btn">🔊 HEMLIG LJUDFIL</button>
 
 <script>
   const audio = document.getElementById("bg-audio");
-  audio.muted = false;
-  audio.volume = 0.15;
+  const btn = document.getElementById("sound-btn");
+
+  btn.addEventListener("click", () => {
+    audio.volume = 0.25; // låg, mystisk volym
+    audio.play();
+    btn.style.display = "none";
+  });
 </script>
 </body>
 </html>
