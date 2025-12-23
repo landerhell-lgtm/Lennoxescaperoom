@@ -150,7 +150,7 @@ utan ett escape room-äventyr – tillsammans, så klart!
       </div>
     </div>
   </main>
-<audio id="bg-audio">
+<audio id="voice">
   <source src="TAL.mp3" type="audio/mpeg">
 </audio>
 <audio id="music" loop>
@@ -160,12 +160,20 @@ utan ett escape room-äventyr – tillsammans, så klart!
 
 
 <script>
-  const audio = document.getElementById("bg-audio");
+  const music = document.getElementById("music");
+  const voice = document.getElementById("voice");
   const btn = document.getElementById("sound-btn");
 
   btn.addEventListener("click", () => {
-    audio.volume = 0.25; // låg, mystisk volym
-    audio.play();
+    // Musik: låg och stämningsfull
+    music.volume = 0.18;
+    music.play();
+
+    // Röst: tydlig, spelas en gång
+    voice.volume = 0.9;
+    voice.currentTime = 0;
+    voice.play();
+
     btn.style.display = "none";
   });
 </script>
